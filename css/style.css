@@ -906,7 +906,6 @@ img {
   font-weight: 600;
   color: var(--text-black-700);
   margin: 0 0 10px;
-  text-transform: capitalize;
 }
 
 .service-section .service-item-inner p {
