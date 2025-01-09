@@ -17,6 +17,14 @@
   --inner-shadow-0: inset 0 0 0 #d0d0d0 inset 0 0 0 #f8f8f8;
 }
 
+.F{
+text-transform: lowercase !important ;
+}
+.L{
+text-transform: capitalize !important ;
+
+}
+
 /* Dark Mode */
 body.dark {
   --bg-black-900: #050303;
