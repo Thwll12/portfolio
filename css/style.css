@@ -867,6 +867,13 @@ img {
   text-align: center;
   width: 100%;
 }
+.service-section .service-description {
+  display: none;
+}
+
+.service-section .service-item-inner.service-open .service-description {
+  display: block;
+}
 
 .service-section .service-item-inner .icon {
   height: 60px;
