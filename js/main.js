@@ -129,9 +129,16 @@ function bodyScrollingToggle() {
   // filter portfolio items
   filterContainer.addEventListener("click", (event) => {
     if (
-      event.target.classList.contains("filter-item") &&
-      !event.target.classList.contains("active")
-    ) {
+  event.target.classList.contains("filter-item") &&
+  !event.target.classList.contains("active")
+) {
+ if (event.target.getAttribute("data-target") === "ldj") {
+  window.open(
+    "https://substack.com/@thelearningdesignjournal",
+    "_blank"
+  );
+  return;
+}
       // deactivat existing active 'filter-item'
       filterContainer
         .querySelector(".active")
