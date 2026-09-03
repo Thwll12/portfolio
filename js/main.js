@@ -173,7 +173,14 @@ function bodyScrollingToggle() {
       screenshots = portfolioItems[itemIndex]
         .querySelector(".portfolio-item-img img")
         .getAttribute("data-screenshots");
-
+if (
+  portfolioItem.querySelector(".portfolio-item-title").innerText.trim() ===
+  "Workforce Readiness System"
+) {
+  projectDetailsBtn.style.display = "none";
+} else {
+  projectDetailsBtn.style.display = "block";
+}
       // Convert screenshots into array
       screenshots = screenshots.split(",");
       if (screenshots.length === 1) {
