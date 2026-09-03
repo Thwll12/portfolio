@@ -293,8 +293,14 @@ popup.querySelector(".pp-counter").style.display = "block";
     popup.querySelector(".pp-project-category").innerHTML = category
       .split("-")
       .join(" ");
-  }
-
+  
+if (
+  title.trim() === "Workforce Readiness System" &&
+  !projectDetailsContainer.classList.contains("active")
+) {
+  popupDetailsToggle();
+}
+    }
   projectDetailsBtn.addEventListener("click", () => {
     popupDetailsToggle();
   });
