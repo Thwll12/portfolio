@@ -204,7 +204,18 @@ function bodyScrollingToggle() {
   }
 
   function popupSlideshow() {
-    const imgSrc = screenshots[slideIndex];
+ 
+  if (!screenshots[0]) {
+    popup.querySelector(".pp-img").style.display = "none";
+    popup.querySelector(".pp-counter").style.display = "none";
+    prevBtn.style.display = "none";
+    nextBtn.style.display = "none";
+    return;
+  }
+
+  const imgSrc = screenshots[slideIndex];
+    popup.querySelector(".pp-img").style.display = "block";
+popup.querySelector(".pp-counter").style.display = "block";
     const popupImg = popup.querySelector(".pp-img");
 
     // activate loder until the popupImg loaded
