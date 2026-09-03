@@ -263,7 +263,14 @@ popup.querySelector(".pp-counter").style.display = "block";
       projectDetailsBtn.style.display = "none";
       return; //end function execution
     }
-    projectDetailsBtn.style.display = "block";
+  if (
+  portfolioItems[itemIndex].querySelector(".portfolio-item-title").innerText.trim() ===
+  "Workforce Readiness System"
+) {
+  projectDetailsBtn.style.display = "none";
+} else {
+  projectDetailsBtn.style.display = "block";
+}
     // get the project details
     const details = portfolioItems[itemIndex].querySelector(
       ".portfolio-item-details"
