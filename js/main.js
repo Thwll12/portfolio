@@ -217,7 +217,8 @@ if (
     popup.querySelector(".pp-counter").style.display = "none";
     prevBtn.style.display = "none";
     nextBtn.style.display = "none";
-    return;
+projectDetailsBtn.style.display = "none";
+return;
   }
 
   const imgSrc = screenshots[slideIndex];
