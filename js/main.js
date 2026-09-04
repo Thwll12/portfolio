@@ -42,13 +42,21 @@
         document.querySelector(hash).classList.add("active");
         document.querySelector(hash).classList.remove("hide");
 
-        // deactivate existing active navigation menu 'link-item'
-        navMenu
-          .querySelector(".active")
-          .classList.add("outer-shadow", "hover-in-shadow");
-        navMenu
-          .querySelector(".active")
-          .classList.remove("active", "inner-shadow");
+        // find the navigation item that matches the selected section
+const matchingNavItem = Array.from(
+  navMenu.querySelectorAll(".link-item")
+).find((item) => item.hash === hash);
+
+// only change the active navigation state
+// when the selected section exists in the main navigation
+if (matchingNavItem) {
+  const activeNavItem = navMenu.querySelector(".active");
+
+  if (activeNavItem) {
+    activeNavItem.classList.add("outer-shadow", "hover-in-shadow");
+    activeNavItem.classList.remove("active", "inner-shadow");
+  }
+}
 
         // if clicked 'link-item' is contained within the navigation menu
         if (navMenu.classList.contains("open")) {
