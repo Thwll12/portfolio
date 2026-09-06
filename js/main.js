@@ -142,7 +142,7 @@ function bodyScrollingToggle() {
 ) {
  if (event.target.getAttribute("data-target") === "ldj") {
   window.open(
-    "https://substack.com/@thelearningdesignjournal",
+    "https://thelearningdesignjournal.substack.com/",
     "_blank"
   );
   return;
