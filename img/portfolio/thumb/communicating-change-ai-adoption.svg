@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1187" height="423" viewBox="0 0 1187 423" role="img" aria-labelledby="title desc">
+<title id="title">Communicating Change: An AI Adoption Rollout Plan</title>
+<desc id="desc">Plum portfolio thumbnail with centered title and subtitle.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#552648"/>
+    <stop offset="100%" stop-color="#451932"/>
+  </linearGradient>
+  <linearGradient id="change" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#e7b7ff"/>
+    <stop offset="100%" stop-color="#d28cf5"/>
+  </linearGradient>
+</defs>
+<rect width="1187" height="423" rx="14" fill="url(#bg)"/>
+<text x="593.5" y="155" text-anchor="middle" fill="#ffffff" font-family="Georgia, 'Times New Roman', serif" font-size="72">Communicating</text>
+<text x="593.5" y="250" text-anchor="middle" fill="url(#change)" font-family="Georgia, 'Times New Roman', serif" font-size="82">Change</text>
+<line x1="480" y1="282" x2="707" y2="282" stroke="#d68bd1" stroke-width="4" stroke-linecap="round"/>
+<text x="593.5" y="345" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="36" letter-spacing="2">An AI Adoption Rollout Plan</text>
+</svg>
